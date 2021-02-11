@@ -6,7 +6,7 @@ define('QS_DBG_ALLOWED_IPS', '127.0.0.1,1.2.3.4' );
 require_once __DIR__ . '/qs_dbg.php';
 
 // debug simple variable.
-qs_dbg("My data");
+qs_dbg("My data", "some optional title");
 
 // debug an array
 qs_dbg([

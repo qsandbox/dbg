@@ -47,6 +47,8 @@ function qs_dbg($data, $title = '') {
 		$esc_buff = htmlentities( $buff, ENT_QUOTES, 'UTF-8' );
 	}
 
+	echo "\n<pre style='background: #AE5946; color: #fff; padding: 3px;margin: 10px 0;font-family: monospace;'>";
+
 	if (!empty($title)) {
 		$title_esc = function_exists('esc_html')
 			? esc_html($title)
@@ -54,7 +56,6 @@ function qs_dbg($data, $title = '') {
 		echo "<h3>$title_esc</h3>";
 	}
 
-	echo "\n<pre style='background: #AE5946; color: #fff; padding: 3px;margin: 10px 0;font-family: monospace;'>";
 	echo $esc_buff;
 	echo "</pre>\n";
 }
