@@ -9,7 +9,7 @@ You need to add this to your config.php file or a file that's always included
 define('QS_DBG_ALLOWED_IPS', '127.0.0.1,1.2.3.4' );
 
 // Load
-require_once ___DIR__ . '/qs_dbg.php';
+require_once __DIR__ . '/qs_dbg.php';
 
 // debug simple variable.
 qs_dbg("My data");
